@@ -26,8 +26,12 @@ app.use(koaBody({
 }));
 
 // 连接数据库
-mongoose.connect("mongodb://admin:123456@localhost:27017/chartfun", {
-  useNewUrlParser: true
+mongoose.connect("mongodb://localhost:27017/chartfun", {
+  useNewUrlParser: true,
+  auth: { "authSource": "admin" },
+  user: "camtg",
+  pass: "camtg",
+  poolSize: 10
 }, err => {
   if (err) {
     console.log('[server] MongoDB connect error: ' + err);
