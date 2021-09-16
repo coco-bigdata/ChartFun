@@ -12,7 +12,7 @@ const router = new Router({
       name: 'index',
       component: () => import('./views/Index.vue'),
       meta: {
-        title: 'ChartFun | 一站式数据大屏制作平台',
+        title: 'ChartFun | 常州天正数据大屏制作平台',
       },
     },
     {
