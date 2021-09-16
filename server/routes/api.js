@@ -11,7 +11,7 @@ router.post('/uploadfile', async (ctx, next) => {
   const newFileName = file.path.split('/').pop(); // 取新的文件名
   return ctx.body = {
     success: true,
-    url: `http://localhost:3000/upload/${newFileName}`,
+    url: `http://192.168.0.97:3000/upload/${newFileName}`,
   };
 });
 

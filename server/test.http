@@ -1,7 +1,7 @@
-GET http://localhost:3000/chart
+GET http://192.168.0.97:3000/chart
 
 ###
-POST http://localhost:3000/chart
+POST http://192.168.0.97:3000/chart
 Content-Type: application/json
 
 {
@@ -11,8 +11,8 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/demo/percent
+GET http://192.168.0.97:3000/demo/percent
 
 ###
 
-GET http://localhost:3000/demo/pv
+GET http://192.168.0.97:3000/demo/pv

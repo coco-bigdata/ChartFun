@@ -24,7 +24,7 @@
           el-col(:span="24")
             el-upload(
               class="bg-uploader"
-              action="http://localhost:3000/api/uploadfile/"
+              action="http://192.168.0.97:3000/api/uploadfile/"
               :show-file-list="false"
               :on-success="handleScreenBgUploadSuccess"
               :before-upload="beforeUpload")
@@ -200,7 +200,7 @@
           .title 上传图片
           el-upload(
             class="bg-uploader"
-            action="http://localhost:3000/api/uploadfile/"
+            action="http://192.168.0.97:3000/api/uploadfile/"
             :show-file-list="false"
             :on-success="handleImageUploadSuccess"
             :before-upload="beforeUpload")
