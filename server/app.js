@@ -26,7 +26,7 @@ app.use(koaBody({
 }));
 
 // 连接数据库
-mongoose.connect("mongodb://localhost:27017/chartfun", { useNewUrlParser: true }, err => {
+mongoose.connect("mongodb://localhost:27012/chartfun", { useNewUrlParser: true }, err => {
   if (err) {
     console.log('[server] MongoDB connect error: ' + err);
   } else {
@@ -52,4 +52,4 @@ app.use(chartRouter.routes()).use(chartRouter.allowedMethods());
 app.use(connectRouter.routes()).use(connectRouter.allowedMethods());
 app.use(demoRouter.routes()).use(demoRouter.allowedMethods());
 app.use(router.routes()).use(router.allowedMethods());
-app.listen(3000);
+app.listen(8112);
