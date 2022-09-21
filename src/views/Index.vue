@@ -1,8 +1,8 @@
 <template lang="pug">
   div
     .screen
-      .logo ChartFun
-      .desc 一站式数据大屏制作平台
+      .logo Curelean
+      .desc 工业云图
       transition(name="slide-fade")
         .login-box(v-if="show")
           .radio-group
